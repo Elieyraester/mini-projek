@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lobster&display=swap" rel="stylesheet">
+    <title>Eliey's Bakery</title>
+    <style>
+       
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4e8;
+        }
+        header {
+            background-color: #b89d72;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+        header a:hover {
+         color: #f4f4e8;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        } 
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            font-family: Great Vibes;
+        }
+        .logo a {
+            text-decoration: none;
+            color: black;
+        }
+        .cart {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .cart input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .cart a {
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 204vh;
+            height: 100vh;
+            filter: brightness(60%);
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .section {
+            background-color: #b89d72;
+            padding: 15px 0;
+            text-align: center;
+        }
+        section h1 {
+            font-size: 48px;
+            color:#800020;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        .first{
+            display: flex;
+            font-size: x-large;
+            margin-left: 20px;
+        }
+        .first img{
+            width: 300px;
+            height: 250px;
+            margin-right: 20px;
+        }
+        .second{
+            display: flex;
+            font-size: x-large;
+            margin-left: 20px;
+            margin-top:  40px;
+        }
+        .second img{
+            width: 300px;
+            height: 250px;
+            margin-right: 20px;
+        }
+        footer {
+            font-size: 15px;
+            padding: 3px;
+            text-align: center;
+            background-color: #b89d72;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="main.html">Eliey's Bakery</a></div>  
+	<nav>
+        <a href="main.html">Home</a>
+        <a href="bakery.html">Cake & Dessert</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#section">About Us</a>
+    </nav>
+
+    <div class="cart">
+        <a href="login.html">&#128100;</a>
+    </div>
+</header>
+
+<div class="hero">
+    <img src="img/Kek Batik.png" alt="Kek Batik">
+    <div class="hero-text">
+        A TASTE OF HOMEMADE <br> GOODNESS IN EVERY BITE!
+        <br>
+        <a href="bakery.html"><button>Shop Now</button></a>
+
+    </div>
+</div>
+<section class="section" id="section">
+    <div class="aboutus" >
+        <h1>About Us</h1>
+    </section>
+    <br>
+    <div class="first">
+       <img src="img/cake1.jpeg" alt="Cake">
+       <p>At Eliey's Bakery , we believe that every bite should be a delightful experience. What started as a small family kitchen with a passion for creating the finest pastries has grown into a bakery loved by our community. We are dedicated to crafting delicious treats using only the freshest, highest-quality ingredients—just like you’d expect from a homemade recipe. <br>
+        Our love for baking runs deep, and we take pride in bringing a touch of sweetness to every occasion, a birthday celebration with a decadent cake, or simply a moment to indulge in something sweet.
+       </p>
+    </div>
+    <div class="second">
+       <p>From traditional classics to innovative new flavors, we offer a wide variety of pastries that are as beautiful to look at as they are to taste. Our team of skilled bakers pours creativity and care into each batch, ensuring every pastry is as memorable as the last. <br>
+
+        At Eliey's Bakery , we are more than just a bakery; we are a family committed to sharing our love of baked goods with you. Our mission is simple: to bring joy, warmth, and sweetness to your table—one pastry at a time. </p>
+        <img src="img/cake2.jpeg" alt="Cake">
+    </div>
+</div>
+<br>
+<footer>
+    <p>&copy; 2024 Elieysbakery.</p>
+   </footer>
+
+</body>
+</html>

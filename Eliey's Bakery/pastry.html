@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lobster&display=swap" rel="stylesheet">
+    <title>Product Display</title>
+    <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4e8;
+        }
+        header {
+            background-color: #b89d72;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+        header a:hover {
+         color: #f4f4e8;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            font-family: Great Vibes;
+        }
+        .logo a {
+            text-decoration: none;
+            color: black;
+        }
+        .cart {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .cart input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .cart a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            font-size: 24px;
+            color: #b51b0e;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .product-card .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+        }
+        .price {
+            font-size: 22px;
+            color: #e60000;
+        }
+
+        .price-incl {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .flavour-selection {
+            margin: 10px 0;
+        }
+
+        .flavour-selection label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .flavour-selection select {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .add-to-cart {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .add-to-cart:hover {
+            background-color: #333;
+        }
+
+    </style>
+</head>
+<header>
+    <div class="logo"><a href="main.html">Eliey's Bakery</a></div>
+    <nav>
+        <a href="main.html">Home</a>
+        <a href="bakery.html">Cake & Dessert</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="main.html #section">About Us</a>
+    </nav>
+    
+    
+    <div class="cart">
+        <a href="cart.html">&#128722;</a>
+        <a href="login.html">&#128100;</a>
+    </div>
+</header>
+<body>
+
+<div class="container">
+    <div class="product-card">
+        <img src="img/cupcake.png" alt="cupcake" height="350px">
+        <h3>Cupcake</h3>
+        <p>Cupcake</p>
+        <p class="price">RM6.00</p>
+    </div>
+    
+    <div class="product-card">
+        <img src="img/burn.png" alt="burn" height="350px">
+        <h3>Mini Burn Cheesecake</h3>
+        <p>Mini Burn Cheesecake</p>
+        <p class="price">RM3.00</p>
+    </div>
+
+    <div class="product-card">
+        <img src="img/peach strudel.jpg" alt="peach strudel" width="350px" height="350px">
+        <h3>Peach Strudel</h3>
+        <p>Peach Strudel</p>
+        <p class="price">RM20.00</p>
+    </div>
+
+    <div class="product-card">
+        <img src="img/velvet.jpg" alt="Red" height="350px">
+        <h3>Mini Red Velvet Cheese Cake</h3>
+        <p>Mini Red Velvet Cheese Cake</p>
+        <p class="price">RM10.00</p>
+        
+    </div>
+    <div class="product-card">
+        <img src="img/almond.png" alt=almond" height="350px">
+        <h3>Almond London</h3>
+        <p>Almond London</p>
+        <p class="price">RM10.00</p>
+        
+    </div>
+    <div class="product-card">
+        <img src="img/roll.jpg" alt="roll" height="350px">
+        <h3>Cinnamon Roll</h3>
+        <p>Cinnamon Roll</p>
+        <p class="price">RM30.00</p>
+        
+    </div>
+    <div class="product-card">
+        <img src="img/buah2.png" alt="buah2" height="350px">
+        <h3>Fruit Custard </h3>
+        <p>Fruit Custard</p>
+        <p class="price">RM30.00</p>
+        
+    </div>
+    <div class="product-card">
+        <img src="img/pudding2.jpg" alt="pudding2" height="350px">
+        <h3>Pudding Tutty Fruty</h3>
+        <p>Pudding Tutty Fruty</p>
+        <p class="price">RM20.00</p>
+        
+    </div>
+</div>
+
+</body>
+</html>
